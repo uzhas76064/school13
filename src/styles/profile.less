@@ -1,0 +1,45 @@
+.profile, .marks {
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.profile {
+    display: flex;
+    font-size: 18px;
+
+    &__description {
+        margin-left: 50px;
+    }
+
+    &__photo {
+        border: 1px solid silver;
+    }
+
+    &__description__item {
+        display: block;
+        text-align: initial;
+        margin: 30px;
+    }
+}
+
+.marks {
+    grid-column: 1;
+
+    &-header {
+        color: #3BA4D7;
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+
+.marks__table {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.marks__table, td, th {
+    border: 1px solid;
+    padding: 10px;
+}

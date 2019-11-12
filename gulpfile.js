@@ -37,6 +37,7 @@ function styles() {
 	return gulp.src('./src/styles/main.less')
 	   .pipe(gulpif(isDev, sourcemaps.init()))
 	   .pipe(less())
+	   .pipe(autoprefixer())
 	   .pipe(concat('style.css'))
 	   .pipe(gcmq())
 	   //.pipe(postcss())
@@ -56,6 +57,7 @@ function img() {
 function icons() {
 	return gulp.src('./src/icons/**/*')
 		.pipe(gulp.dest('./app/icons'))
+		.pipe(gulpif(isSync, browserSync.stream()));
 }
 
 function html() {

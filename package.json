@@ -8,9 +8,10 @@
     "build": "gulp build"
   },
   "browserslist": [
-    "last 1 version",
-    "> 1%",
+    "last 2 versions",
+    "> 0.2%",
     "maintained node versions",
+    "ie 6-11",
     "not dead"
   ],
   "keywords": [],
