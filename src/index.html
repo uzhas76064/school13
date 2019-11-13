@@ -20,6 +20,9 @@
             <nav class="nav">
                 <ul class="nav-items">
                     <li class="nav-items__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-items__item">
                         <a href="profile.html">Профиль</a>
                     </li>
                     <li class="nav-items__item">
@@ -68,8 +71,22 @@
             </article>
     </div>
 
+    <div class="modal" id="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-body">
+            <button class="modal-close" id="close">закрыть</button>
+            <h2 class="modal__header">Вход</h2>
+            <form action="" method="post" class="modal-sign-in">
+                <input type="email" name="email" placeholder="Введите свой email">
+                <input type="password" name="password" placeholder="Введите пароль">
+                <button type="submit" class="modal-sign-in__button">Войти</button>
+            </form>
+        </div>
+    </div>
+
     <script src="js/jsCalendar.lang.ru.js"></script>
     <script src="js/jsCalendar.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

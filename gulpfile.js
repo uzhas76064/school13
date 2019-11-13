@@ -67,7 +67,7 @@ function fonts() {
 }
 
 function js() {
-	return gulp.src('./src/js/*.js')
+	return gulp.src('./src/js/*')
 		.pipe(gulp.dest('./app/js'))
 		.pipe(gulpif(isSync, browserSync.stream()));
 }
