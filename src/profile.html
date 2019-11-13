@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/jsCalendar.css">
+    <link rel="stylesheet" type="text/css" href="styles/jsCalendar.css">
     <title>Профиль</title>
 </head>
 
@@ -60,6 +60,10 @@
             </div>
         </section>
 
+        <aside class="sidebar">
+            <div class="auto-jsCalendar material-theme blue" data-language="ru"></div>
+        </aside>
+
         <section class="marks">
             <h2 class="marks-header">Оценки по предметам</h2>
             <table class="marks__table">
@@ -94,11 +98,15 @@
             </table>
         </section>
 
-        <aside class="sidebar">
-                <div class="auto-jsCalendar"></div>
-        </aside>
+        <article class="events-article">
+            <h3 class="events-article__header">Ближайшие события</h3>
+            <p class="events-article__event"></p>
+            <p class="events-article__event"></p>
+            <p class="events-article__event"></p>
+        </article>
     </div>
 
+    <script src="js/jsCalendar.lang.ru.js"></script>
     <script src="js/jsCalendar.js"></script>
 </body>
 

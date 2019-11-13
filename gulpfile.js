@@ -60,6 +60,18 @@ function icons() {
 		.pipe(gulpif(isSync, browserSync.stream()));
 }
 
+function fonts() {
+	return gulp.src('./src/fonts/*')
+		.pipe(gulp.dest('./app/fonts'))
+		.pipe(gulpif(isSync, browserSync.stream()));
+}
+
+function js() {
+	return gulp.src('./src/js/*.js')
+		.pipe(gulp.dest('./app/js'))
+		.pipe(gulpif(isSync, browserSync.stream()));
+}
+
 function html() {
 	return gulp.src('./src/*.html')
 	   .pipe(gulp.dest('./app'))
@@ -80,7 +92,7 @@ function watch() {
 }
 
 let build = gulp.series(clear,
-	gulp.parallel(styles, img, html, icons)
+	gulp.parallel(styles, img, html, icons, fonts, js)
 );
 
 gulp.task('build', build);
