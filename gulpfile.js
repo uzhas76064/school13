@@ -88,7 +88,9 @@ function watch() {
 	}
 
 	gulp.watch('./src/styles/**/*.less', styles);
+	gulp.watch('./src/styles/*.css', styles);
 	gulp.watch('./src/*.html', html);
+	gulp.watch('./src/js/*.js', js);
 }
 
 let build = gulp.series(clear,

@@ -1,4 +1,5 @@
 let signIn = document.querySelector('.ui__sign-in');
+let signUp = document.querySelector('ui__sign-up');
 let close = document.querySelector('.modal-close');
 let modal = document.querySelector('.modal');
 
