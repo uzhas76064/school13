@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/jquery-ui.theme.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/jsCalendar.css">
-    <title>Профиль</title>
+    <title>Расписание</title>
 </head>
 
 <body>
@@ -68,40 +68,72 @@
 
         <div class="schedule" id="tabs">
             <ul>
-                <li><a href="#tabs-1">Nunc tincidunt</a></li>
-                <li><a href="#tabs-2">Proin dolor</a></li>
-                <li><a href="#tabs-3">Aenean lacinia</a></li>
+                <li><a href="#tabs-1">11 "F"</a></li> 
+                <li><a href="#tabs-2">11 "Á"</a></li>
+                <li><a href="#tabs-3">10 "F"</a></li>
             </ul>
             <div id="tabs-1">
-                <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec
-                    sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem.
-                    Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula
-                    eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam
-                    molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum.
-                    Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                <div class="schedule__items">
+                    <h3 class="week-day">Понедельник</h3>
+                    <ol class="schedule__items__list">
+                        <li class="schedule__items__list__item">Физика</li>
+                        <li class="schedule__items__list__item">Английский</li>
+                        <li class="schedule__items__list__item">Русский</li>
+                        <li class="schedule__items__list__item">Алгебра</li>
+                        <li class="schedule__items__list__item">Литература</li>
+                    </ol>
+                    <h3 class="week-day">Вторник</h3>
+                    <ol class="schedule__items__list">
+                        <li class="schedule__items__list__item">Английский</li>
+                        <li class="schedule__items__list__item">Информатика</li>
+                        <li class="schedule__items__list__item">Физика</li>
+                        <li class="schedule__items__list__item">История</li>
+                        <li class="schedule__items__list__item">Мир. культура</li>
+                    </ol>
+                    <h3 class="week-day">Среда</h3>
+                    <ol class="schedule__items__list">
+                        <li class="schedule__items__list__item">Всемирная история</li>
+                        <li class="schedule__items__list__item">Биология</li>
+                        <li class="schedule__items__list__item">Химия</li>
+                        <li class="schedule__items__list__item">Туркменская л-ра</li>
+                        <li class="schedule__items__list__item">Обществоведение</li>
+                    </ol>
+                </div>
+                <div class="schedule__items">
+                    <h3 class="week-day">Четверг</h3>
+                    <ol class="schedule__items__list">
+                        <li class="schedule__items__list__item">Алгебра</li>
+                        <li class="schedule__items__list__item">Русский</li>
+                        <li class="schedule__items__list__item">Химия</li>
+                        <li class="schedule__items__list__item">Культура поведения</li>
+                        <li class="schedule__items__list__item">Туркменский</li>
+                        <li class="schedule__items__list__item">Английский</li>
+                    </ol>
+                    <ol class="schedule__items__list">
+                        <h3 class="week-day">Пятница</h3>
+                        <li class="schedule__items__list__item">Физ-ра</li>
+                        <li class="schedule__items__list__item">Алгебра</li>
+                        <li class="schedule__items__list__item">Экономика</li>
+                        <li class="schedule__items__list__item">Английский</li>
+                        <li class="schedule__items__list__item">Туркменская л-ра</li>
+                        <li class="schedule__items__list__item">Информатика</li>
+                    </ol>
+                    <ol class="schedule__items__list">
+                        <h3 class="week-day">Суббота</h3>
+                        <li class="schedule__items__list__item">Экология</li>
+                        <li class="schedule__items__list__item">Геометрия</li>
+                        <li class="schedule__items__list__item">Литература</li>
+                        <li class="schedule__items__list__item">ИКИТ</li>
+                        <li class="schedule__items__list__item">История</li>
+                        <li class="schedule__items__list__item">Английский</li>
+                    </ol>
+                </div>
             </div>
             <div id="tabs-2">
-                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
-                    nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros
-                    molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula
-                    in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis.
-                    Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat.
-                    Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod
-                    felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                
             </div>
             <div id="tabs-3">
-                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
-                    vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class
-                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.
-                    Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
-                    Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
-                    facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse
-                    potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor
-                    eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi
-                    lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum
-                    rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus
-                    hendrerit hendrerit.</p>
+                
             </div>
         </div>
     </div>
