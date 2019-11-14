@@ -50,7 +50,12 @@
     font-style: italic;
 }
 
+.auto-jsCalendar {
+    padding-bottom: 25px;
+}
+
 .sidebar {
+    grid-area: aside;
     grid-column: 4/6;
     background: #F7F7F7;
     margin: unset;
@@ -58,33 +63,33 @@
     padding: 25px;
 }
 
-.events-article {
+.events-aside {
     padding: 25px;
     text-align: initial;
     background: #F7F7F7;
+    border-top: 1px solid silver;
 
     &__header {
         font-weight: 600;
         font-size: 20px;
         color: #3da4cd;
-        margin-top: 25px;
         margin-bottom: 25px;
         text-align: center;
     }
 }
 
-.events-article__events {
+.events-aside__events {
     text-align: initial;
     margin: 0 auto;
     width: 65%;
 }
 
-.events-article__event__item {
+.events-aside__event__item {
     padding-top: 10px;
     font-style: italic;
 }
 
-.events-article__event__item:not(:last-child) {
+.events-aside__event__item:not(:last-child) {
     padding-bottom: 15px;
     border-bottom: 1px solid silver;
 }
